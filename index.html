@@ -4,42 +4,61 @@
   <head>
     <meta charset="utf-8">
     <title>Archery Academy</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
 
   <!-- Body of HTML page -->
-  <body>
+  <body class="container">
 
-    <!-- Header -->
-    <header>
-      <figure>
-        <a href="index.html">
-          <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
-        </a>
-      </figure>
-      <nav>
-        <a href="classes.html">Services</a> |
-        <a href="instructors.html">Instructors</a> |
-        <a href="about.html">About</a>
-      </nav>
-    </header>
+      <!-- Header -->
+      <header id="item-a">
 
-    <main>
-      <h1>Straight to the Point Archery</h1>
-      <h3>528 Nock Point Ln<br>
-      Tacoma, WA 98412<br>
-      archery-education@example.com<br>
-      (253)555-1010</h3>
-    </main>
+        <figure>
+          <a href="index.html">
+            <img id="header-logo" src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
+          </a>
+        </figure>
 
-    <!-- Bottom of the page stuff -->
-    <!-- Footer -->
-    <footer> 
-      <nav>
-        <a href="classes.html">Services</a> |
-        <a href="instructors.html">Instructors</a> |
-        <a href="about.html">About</a>
-      </nav>
-      <p>©2019 Archery Academy | Seattle, WA</p>
-    </footer> 
+        <nav id="header-nav">
+          <a href="classes.html">Services</a> /
+          <a href="instructors.html">Instructors</a> /
+          <a href="about.html">About</a>
+        </nav>
+
+      </header>
+
+      <main id="item-b">
+        <video autoplay muted loop id="bgVideo">
+          <source src="videos/bgVideo.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+          <h1>Straight to the Point Archery</h1>
+          <h2>528 Nock Point Ln<br>
+          Tacoma, WA 98412<br>
+          archery-education@example.com<br>
+          (253) 555-1010</h2>
+        </div>
+      </main>
+
+      <!-- Bottom of the page stuff -->
+      <!-- Footer -->
+      <footer id="item-c">
+
+        <figure>
+          <a href="index.html">
+            <img id="logo" src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
+          </a>
+        </figure>
+
+        <nav id="footer-nav">
+          <a href="classes.html">Services</a> |
+          <a href="instructors.html">Instructors</a> |
+          <a href="about.html">About</a>
+        </nav>
+        <p>©2019 Archery Academy | Seattle, WA</p>
+      </footer>
+     
   </body>
+
 </html>

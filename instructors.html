@@ -3,84 +3,102 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Archery Academy</title>
+    <title>Instructors: Archery Academy</title>
+    <link rel="stylesheet" type="text/css" href="styles/instructors-stylesheet.css">
   </head>
 
   <!-- Body of HTML page -->
-  <body>
+  <body class="container">
 
     <!-- Header -->
-    <header>
+    <header id="item-a">
       <figure>
         <a href="index.html">
           <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
         </a>
       </figure>
-      <nav>
-        <a href="classes.html">Services</a> |
-        <a>Instructors</a> |
+      <nav id="header-nav">
+        <a href="classes.html">Services</a> /
+        <a>Instructors</a> /
         <a href="about.html">About</a>
       </nav>
     </header>
 
-   <main>
-
-      <h2>Instructors</h2>
-
-        <div>
-          <section>
-            <figure>
-              <img src="images/instructor-bio-image1.png" alt="Derek Jenkins headshot picture">
-            </figure>
-            <h2>Derek Jenkins</h2>
-            <hr>
-            <h5>CERTIFICATION</h5>
-            <p>Level 3 Coach</p>
-            <h5>COACHING BOW STYLES</h5>
-            <p>Recurve</p>
-            <h5>PROFILE</h5>            
-            <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
-            <p>"My biggest goal is to see archery grow and help its participants to grow with it."</p>
-          </section>
-
-          <section>
-            <figure>
-              <img src="images/instructor-bio-image2.png" alt="Amy Smith headshot picture">
-            </figure>
-            <h2>Amy Smith</h2>
-            <hr>
-            <h5>CERTIFICATION</h5>
-            <p>Level 3 Coach</p>
-            <h5>COACHING BOW STYLES</h5>
-            <p>Recurve</p>
-            <h5>PROFILE</h5>            
-            <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy  places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.</p>
-            <p>"Quote quote quoted quotes."</p>
-          </section>
-
-          <section>
-            <figure>
-              <img src="images/instructor-bio-image3.png" alt="Amy Smith headshot picture">
-            </figure>
-            <h2>Nathan Lee</h2>
-            <hr>
-            <h5>CERTIFICATION</h5>
-            <p>Level 3 Coach</p>
-            <h5>COACHING BOW STYLES</h5>
-            <p>Recurve</p>
-            <h5>PROFILE</h5>            
-            <p>Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
-            <p>"Quote quote quoted quotes."</p>
-          </section>
-
+    <main id="item-b" class="flex-outer">
+      <h1>Instructors</h1>
+      <section class="ins-grid">
+        <figure>
+          <img src="images/instructor-bio-image1.png" alt="Derek Jenkins headshot picture">
+        </figure>
+        <div class="ins-name">
+          <h2>Derek Jenkins</h2>
+          <hr>
         </div>
+        <div class="ins-info">
+          <h5>CERTIFICATION</h5>
+          <p>Level 3 Coach</p>
+          <h5>COACHING BOW STYLES</h5>
+          <p>Recurve</p>
+          <h5>PROFILE</h5>            
+          <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
+        </div>
+        <div class="ins-quote">
+          <p>"My biggest goal is to see archery grow and help its participants to grow with it."</p>
+        </div>
+      </section>
 
+      <section class="ins-grid">
+        <figure>
+          <img src="images/instructor-bio-image2.png" alt="Amy Smith headshot picture">
+        </figure>
+        <div class="ins-name">
+          <h2>Amy Smith</h2>
+          <hr>
+        </div>
+        <div class="ins-info">
+          <h5>CERTIFICATION</h5>
+          <p>Level 3 Coach</p>
+          <h5>COACHING BOW STYLES</h5>
+          <p>Recurve</p>
+          <h5>PROFILE</h5>            
+          <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy  places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.</p>
+        </div>
+        <div class="ins-quote">
+          <p>"Quote quote quoted quotes."</p>
+        </div>
+      </section>
+
+      <section class="ins-grid">
+        <figure>
+          <img src="images/instructor-bio-image3.png" alt="Amy Smith headshot picture">
+        </figure>
+        <div class="ins-name">
+          <h2>Nathan Lee</h2>
+          <hr>
+        </div>
+        <div class="ins-info">
+          <h5>CERTIFICATION</h5>
+          <p>Level 3 Coach</p>
+          <h5>COACHING BOW STYLES</h5>
+          <p>Recurve</p>
+          <h5>PROFILE</h5>            
+          <p>Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
+        </div>
+        <div class="ins-quote">
+          <p>"Quote quote quoted quotes."</p>
+        </div>
+      </section>
     </main>
 
     <!-- Bottom of the page stuff -->
     <!-- Footer -->
-    <footer> 
-      <nav>
+    <footer id="item-c">
+      <figure>
+          <a href="index.html">
+            <img id="logo" src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
+          </a>
+      </figure>
+      <nav id="footer-nav">
         <a href="classes.html">Services</a> |
         <a>Instructors</a> |
         <a href="about.html">About</a>

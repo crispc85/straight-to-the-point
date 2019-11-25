@@ -3,83 +3,106 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Archery Academy</title>
+    <title>Classes: Archery Academy</title>
+    <link rel="stylesheet" type="text/css" href="styles/classes-stylesheet.css">
   </head>
 
   <!-- Body of HTML page -->
-  <body>
+  <body class="container">
 
     <!-- Header -->
-    <header>
+    <header id="item-a">
       <figure>
         <a href="index.html">
           <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
         </a>
       </figure>
-      <nav>
-        <a>Services</a> |
-        <a href="instructors.html">Instructors</a> |
+      <nav id="header-nav">
+        <a>Services</a> /
+        <a href="instructors.html">Instructors</a> /
         <a href="about.html">About</a>
       </nav>
     </header>
 
-    <main>
-
-      <section>
-        <h2>Group Classes</h2>
-
+    <section id="item-b" class="flex-outer">
+      <h1 class="flex-h">Group Classes</h1>
+      <div class="flex-inner">      
         <section>
           <h4>A101 - Basic Archery</h4>
-          <p>A101 is a basic archery course that focuses on beginning archery safety, skills, and drills. Participants learn about archery form, range rules and etiquette. Form training and fun games are introduced in this class.<br><br>Equipment will be provided with exception of safety kit.</p>
-          <p><strong>Cost:</strong> $120/month</p>
-          <p><strong>Schedule:</strong> Mondays and Wednesdays, 4-5pm</p>
-          <p><strong>Prerequisite:</strong> Interest in learning about the sport of archery. Minimum age  8 years old or 7 w/ pre-evaluation.</p>
+          <p>A101 is a basic archery course that focuses on beginning archery safety, skills, and drills. Participants learn about archery form, range rules and etiquette. Form training and fun games are introduced in this class.<br><br><em>Equipment will be provided with exception of safety kit.</em></p>
+          <h5>Cost:</h5> 
+          <p>$120/month</p>
+          <h5>Schedule:</h5> 
+          <p>Mondays and Wednesdays, 4-5pm</p>
+          <h5>Prerequisite:</h5>
+          <p>Interest in learning about the sport of archery. Minimum age  8 years old or 7 w/ pre-evaluation.</p>
+          <hr>
         </section>
 
         <section>
           <h4>A102 - Intermediate Archery</h4>
-          <p>A102 is an intermediate archery course that focuses on intermediate archery safety, form, and introduces new equipment styles of shooting Recurve and Compound bows. Fun games and form reinforcement techniques are emphasized in this class.<br><br>Equipment will be provided with exception of safety kit.</p>
-          <p><strong>Cost:</strong> $120/month</p>
-          <p><strong>Schedule:</strong> Tuesdays and Thursdays, 4-5pm</p>
-          <p><strong>Prerequisite:</strong> A101 or recommendation from private lesson instructor. Minimum age  7 years old.</p>
+          <p>A102 is an intermediate archery course that focuses on intermediate archery safety, form, and introduces new equipment styles of shooting Recurve and Compound bows. Fun games and form reinforcement techniques are emphasized in this class.<br><br><em>Equipment will be provided with exception of safety kit.</em></p>
+          <h5>Cost:</h5>
+          <p>$120/month</p>
+          <h5>Schedule:</h5> 
+          <p>Tuesdays and Thursdays, 4-5pm</p>
+          <h5>Prerequisite:</h5>
+          <p>A101 or recommendation from private lesson instructor. Minimum age  7 years old.</p>
+          <hr>
         </section>
 
         <section>
           <h4>A103 - Advanced Archery</h4>
-          <p>After taking the A101, A102 classes, students are eligible to participate in the A103 class. This class focuses on a continued education towards tournament styles of shooting used by many archery tournament associations from around the world. Along with the tournament lesson, participants receive continued knowledge around their shooting form and advice on personal equipment selections.<br><br>Equipment will be provided with exception of safety kit.</p>
-          <p><strong>Cost:</strong> $120/month</p>
-          <p><strong>Schedule:</strong> Tuesdays and Thursdays, 5-6pm</p>
-          <p><strong>Prerequisite:</strong>  A101/A102 or equivalent. Minimum age  7 years old.</p>
+          <p>After taking the A101, A102 classes, students are eligible to participate in the A103 class. This class focuses on a continued education towards tournament styles of shooting used by many archery tournament associations from around the world. Along with the tournament lesson, participants receive continued knowledge around their shooting form and advice on personal equipment selections.<br><br><em>Equipment will be provided with exception of safety kit.</em></p>
+          <h5>Cost:</h5>
+          <p>$120/month</p>
+          <h5>Schedule:</h5>
+          <p>Tuesdays and Thursdays, 5-6pm</p>
+          <h5>Prerequisite:</h5>  
+          <p>A101/A102 or equivalent. Minimum age  7 years old.</p>
         </section>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <h2>Private Lessons</h2>
-
+    
+    <section id="item-c" class="flex-outer">
+      <h1 class="flex-h">Private Lessons</h1>
+      <div class="flex-inner">      
         <section>
           <h4>Single Lesson</h4>
           <p>1 hour of expert guidance by a USA Archery-certified coach</p>
-          <p><strong>Cost:</strong> $50</p>
+          <h5>Cost:</h5>
+          <p>$50</p>
+          <hr>
         </section>
 
         <section>
           <h4>3 Lesson Package</h4>
           <p>3 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p>
-          <p><strong>Cost:</strong> $140</p>
+          <h5>Cost:</h5>
+          <p>$140</p>
+          <hr>
         </section>
 
         <section>
           <h4>10 Lesson Package</h4>
           <p>10 lessons, 1 hour each of expert guidance by a USA Archery-certified coach</p>
-          <p><strong>Cost:</strong> $380</p>
+          <h5>Cost:</h5>
+          <p>$380</p>
         </section>
-      </section>
-    </main>
+      </div>
+    </section>
+
 
     <!-- Bottom of the page stuff -->
     <!-- Footer -->
-    <footer> 
-      <nav>
+    <footer id="item-d">
+      <figure>
+          <a href="index.html">
+            <img id="logo" src="images/archeryAcademy-logo-white.png" alt="Archery Academy logo" >
+          </a>
+      </figure> 
+      <nav id="footer-nav">
         <a>Services</a> |
         <a href="instructors.html">Instructors</a> |
         <a href="about.html">About</a>
