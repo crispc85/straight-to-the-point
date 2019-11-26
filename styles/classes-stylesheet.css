@@ -13,16 +13,18 @@ body {
   padding: 0;
   border: 0;
   min-width: 790px;
-  height: 100%;
+  min-height: 100%;
 }
 
 h1 {
   font-family: "arial", sans-serif;
   font-size: 40px;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
-  text-decoration: underline;
+  margin: 0px;
+  padding: 20px 30px;
+  background-color: #1B447F;
+  border-radius: 25px;
+  text-align: center;
 }
 
 h4 {
@@ -56,7 +58,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   border: 0;
-  padding: 0px 40px;
+  padding: 40px 60px;
   margin: 0;
   height: 160px;
 }
@@ -65,20 +67,22 @@ p {
   background-color: #03a3df;
   grid-area: classes;
   border: 0;
-  padding: 50px 40px;
+  padding: 40px 60px;
   padding-right: 20px;
   margin: 0;
   color: white;
+  min-height: calc(100% - 250px - 160px - 80px);
 }
 
 #item-c {
   background-color: #03a3df;
   grid-area: lessons;
   border: 0;
-  padding: 50px 40px;
+  padding: 40px 60px;
   padding-left: 20px;
   margin: 0;
   color: white;
+  min-height: calc(100% - 250px - 160px - 80px);
 }
 
 #item-d {
@@ -86,7 +90,7 @@ p {
   border: 0;
   padding: 0;
   margin: 0;  
-  min-height: 290px;
+  height: 250px;
 }
 
 .container {
@@ -121,15 +125,10 @@ p {
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #1b447f;
   border-radius: 25px;
-}
-
-.flex-h {
-  margin: auto;
-  padding: 0;
 }
 
 hr {
@@ -190,7 +189,6 @@ footer {
   background-position: center;
   background-size: cover;
   color: white;
-  position: relative;
 }
 
 footer a {
@@ -203,23 +201,43 @@ footer a {
 footer figure {
   margin: auto;
   text-align: center;
+  max-width: 400px;
 }
 
 footer nav {
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-  margin: 5px 0;
-  padding-left: 0;
-  padding-right: 0;
+  width: 400px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 0;
   text-align: center;
 }
 
 footer p {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  font-size: 16px;
+  font-weight: 7;
+  width: 400px;
   margin: auto;
+  margin-top: 20px;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 0px;
+}
+
+#skip a
+{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+ 
+#skip a:focus
+{
+  position:absolute;
+  left: 0;
+  top: 0;
+  width:auto;
+  height:auto;
+  color: black;
 }

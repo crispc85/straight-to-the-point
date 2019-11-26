@@ -3,6 +3,7 @@ CSS Stylesheet
 *************************************************************************/
 html {
   height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +13,7 @@ body {
   padding: 0;
   border: 0;
   min-width: 790px;
-  min-height: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -25,6 +26,13 @@ h2 {
   font-size: 24px;
 }
 
+p {
+  font-family: "arial", sans-serif;
+  font-size: 17px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
 #item-a {
   background-color: #03a3df;
   grid-area: header;
@@ -33,7 +41,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   border: 0;
-  padding: 0px 40px;
+  padding: 40px 60px;
   margin: 0;
   height: 160px;
 }
@@ -44,7 +52,9 @@ h2 {
   border: 0;
   padding: 0;
   margin: 0;
-  height: 500px;
+
+  height: calc(100vh - 250px - 160px - 80px);
+  min-height: 360px;
 }
 
 #item-c {
@@ -52,8 +62,7 @@ h2 {
   border: 0;
   padding: 0;
   margin: 0;
-  height: calc(100vh - 500px - 160px);
-  min-height: 290px;
+  height: 250px;
 }
 
 .container {
@@ -116,9 +125,8 @@ a:last-child {
 
 .content {
   position: absolute;
-  top: 0;
+  top: 110px;
   left: 0;
-  padding-top: 125px;
   margin: auto;
   text-align: center;
   width: 100%;
@@ -129,7 +137,8 @@ a:last-child {
 
 #bgVideo {
   width: 100%;
-  height: 500px;
+  height: calc(100vh - 250px - 160px - 80px);
+  min-height: 360px;
   /*display: block;*/
   object-fit: cover;
   padding: 0;
@@ -143,7 +152,6 @@ footer {
   background-position: center;
   background-size: cover;
   color: white;
-  position: relative;
 }
 
 footer a {
@@ -156,24 +164,43 @@ footer a {
 footer figure {
   margin: auto;
   text-align: center;
+  max-width: 400px;
 }
 
 footer nav {
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-  margin: 5px 0;
-  padding-left: 0;
-  padding-right: 0;
+  width: 400px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 0;
   text-align: center;
 }
 
 footer p {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  font-size: 16px;
+  font-weight: 7;
+  width: 400px;
   margin: auto;
+  margin-top: 20px;
   text-align: center;
   padding: 0;
-  padding-bottom: 20px;
+}
+
+#skip a
+{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+ 
+#skip a:focus
+{
+  position:absolute;
+  left: 0;
+  top: 0;
+  width:auto;
+  height:auto;
+  color: black;
 }
